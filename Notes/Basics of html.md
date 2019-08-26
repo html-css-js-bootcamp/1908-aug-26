@@ -50,6 +50,6 @@
 
 ### Types of elements in HTML
 - Block Element: These elements takes the entire width of the page and new elements starts from a new line.
-    Eg:< p >, < h1 >, < div >, < ul >, < li >
+    Eg:< p >, < h1 >, < div >, < ul >, < li >, < ol >
 - Inline Element: These elements they take only required space and new inline element starts right after end og the previous inline element.
     Eg: < span >, < strong >, < em >, < u >, < img >, < a >
