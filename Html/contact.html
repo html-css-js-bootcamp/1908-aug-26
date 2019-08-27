@@ -1,86 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Contact</title>
+    <link href="../Styles/common.css" rel="stylesheet" type="text/css">
+    <link href="../Styles/contact.css" rel="stylesheet" type="text/css">
+    <style>
+        /* comments in 
+        CSS*/
+        /* CSS Rulset -> It has 
+        selector{
+            //CSS Rule
+            property:property value
+        }
+         */
+        /* Internal Style Sheet */
+        /* body{
+            background: lightpink;
+            text-align: center;
+            align-items: center;
+        }
+        table{
+            background:lightcoral;
+        }
+        a{
+            background: orange;
+            font-size: 25px;
+        } */
+    </style>
 </head>
+
 <BODY>
-        <nav>
-                <a href="home.html">Home | </a>
-                <a href="About.html">About | </a>
-                <a href="contact.html">Contact Us</a>
-                <a href="https://app.revature.com/">Revature Pro</a>
-        </nav>
+    <nav>
+        <a href="home.html">Home | </a>
+        <a href="About.html">About | </a>
+        <a href="contact.html">Contact Us</a>
+        <a href="https://app.revature.com/">Revature Pro</a>
+    </nav>
     <h1>Contact Us page</h1>
     <table>
         <tr>
             <td>
                 <!-- contact form -->
                 <form action="Home.html" method="GET">
-                <table>
-                    <tr>
-                        <td>
-                            <label for="name">Name <span>* </span> </label>
-                        </td>
-                        <td>
-                            <input id="name" type="text" placeholder="enter your full name" autofocus required>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="email" >Email <span>* </span> </label>
-                        </td>
-                        <td>
-                            <input type="email" id="email" placeholder="enter your email" required>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="phone" >Phone <span>*</span></label>
-                        </td>
-                        <td>
-                            <input id="phone" type="phone" placeholder="enter your phone" required>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="inquiry">Inquiry Type</label>
-                        </td>
-                        <td>
-                            <select id="inquiry">
-                                <option>General</option>
-                                <option>Revature Pro Bootcamp</option>
-                                <option>Revature Pro Online</option>
-                                <option>Client Partners</option>
-                                <option>Support</option>
-                                <option>Academic Partners</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="message">Message</label>
-                        </td>
-                        <td>
-                            <textarea id="message" placeholder="enter your query message" rows="10" cols="20"></textarea>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <!-- <input type="checkbox" id="rememberme"> -->
-                            <input type="radio" id="rememberme">
-                        </td>
-                        <td>
-                            <label for="rememberme">Remember Me</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="submit" value="Submit Form">
-                        </td>
-                    </tr>
-                </table>
-                * means Required fields
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="name">Name <span>* </span> </label>
+                            </td>
+                            <td>
+                                <input id="name" type="text" placeholder="enter your full name" autofocus required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="email">Email <span>* </span> </label>
+                            </td>
+                            <td>
+                                <input type="email" id="email" placeholder="enter your email" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="phone">Phone <span>*</span></label>
+                            </td>
+                            <td>
+                                <input id="phone" type="phone" placeholder="enter your phone" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="inquiry">Inquiry Type</label>
+                            </td>
+                            <td>
+                                <select id="inquiry">
+                                    <option>General</option>
+                                    <option>Revature Pro Bootcamp</option>
+                                    <option>Revature Pro Online</option>
+                                    <option>Client Partners</option>
+                                    <option>Support</option>
+                                    <option>Academic Partners</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="message">Message</label>
+                            </td>
+                            <td>
+                                <textarea id="message" placeholder="enter your query message" rows="10"
+                                    cols="20"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <!-- <input type="checkbox" id="rememberme"> -->
+                                <input type="radio" id="rememberme">
+                            </td>
+                            <td>
+                                <label for="rememberme">Remember Me</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="submit" value="Submit Form">
+                            </td>
+                        </tr>
+                    </table>
+                    * means Required fields
                 </form>
             </td>
             <td>
