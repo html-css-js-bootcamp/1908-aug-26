@@ -57,7 +57,7 @@
 ### Paths
 -  Paths refers to the address of the resource
 -  There are 2 types of paths :
-    - Absolute Path : This is the fully qualified path to the another page/resource. Absolute path includes the     protocol, file path etc... This is the fully qualified path. Typically absolute path should be used to      reference a page or resource outside the application server.
+    - Absolute Path : This is the fully qualified path to the another page/resource.            Absolute path includes the protocol, file path etc... This is the fully               qualified path. Typically absolute path should be used to reference a page or         resource outside the application server.
         Eg: absolute path in server : C:\Revature\RBC\1908-aug-26\Html\Home.html
         absolute path outside server:  https://app.revature.com/
     - Relative Path : Typically used to reference the page or resource within the application server. Its prefered to have relative path for local resources over absolute path.
@@ -68,3 +68,7 @@
     - action : referes to URL where the form values should be submitted.
     - Method :  It can have to values *GET* or *POST*.
 - Note : A clients request is didvided into 2 parts as Request Header (URI), Request Body (values of form sent by POST method).
+- Its a good practise to keep form validation
+    - *Validations* are used to check the validity of the information submitted by the user. It cane be checked at server side or at client side. 
+- Forms use Input, Select, textarea, buttons as form elements.
+- Input : by defalut type is text but you can have type as radio, text, email, number, checkbox, submit, date, time etc....

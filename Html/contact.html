@@ -23,15 +23,15 @@
                             <label for="name">Name <span>* </span> </label>
                         </td>
                         <td>
-                            <input id="name" type="text" placeholder="enter your full name" autofocus>
+                            <input id="name" type="text" placeholder="enter your full name" autofocus required>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label for="email">Email <span>* </span> </label>
+                            <label for="email" >Email <span>* </span> </label>
                         </td>
                         <td>
-                            <input id="email" placeholder="enter your email">
+                            <input type="email" id="email" placeholder="enter your email" required>
                         </td>
                     </tr>
                     <tr>
@@ -39,7 +39,7 @@
                             <label for="phone" >Phone <span>*</span></label>
                         </td>
                         <td>
-                            <input id="phone"  type="text" placeholder="enter your phone">
+                            <input id="phone" type="phone" placeholder="enter your phone" required>
                         </td>
                     </tr>
                     <tr>
@@ -63,6 +63,15 @@
                         </td>
                         <td>
                             <textarea id="message" placeholder="enter your query message" rows="10" cols="20"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <!-- <input type="checkbox" id="rememberme"> -->
+                            <input type="radio" id="rememberme">
+                        </td>
+                        <td>
+                            <label for="rememberme">Remember Me</label>
                         </td>
                     </tr>
                     <tr>
