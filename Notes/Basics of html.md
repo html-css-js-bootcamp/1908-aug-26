@@ -35,7 +35,7 @@
 -  It runs on the web browser.
 -  *TAG* - this starts with < and ends with >
 -  Tags can be opening tag < tag name>  and closing tag(tag name starts with /) </ tag name>
--  self-closing tags tags which donot need any closing tag.
+-  self-closing tags tags which donot need any closing tag. Eg: <br>, <hr>, <img>, <meta> etc...
 
 ### Elements in HTML
 - < opening tag > content < / closing tag >
@@ -51,5 +51,20 @@
 ### Types of elements in HTML
 - Block Element: These elements takes the entire width of the page and new elements starts from a new line.
     Eg:< p >, < h1 >, < div >, < ul >, < li >, < ol >
-- Inline Element: These elements they take only required space and new inline element starts right after end og the previous inline element.
+- Inline Element: These elements they take only required space and new inline element starts right after end of the previous inline element.
     Eg: < span >, < strong >, < em >, < u >, < img >, < a >
+
+### Paths
+-  Paths refers to the address of the resource
+-  There are 2 types of paths :
+    - Absolute Path : This is the fully qualified path to the another page/resource. Absolute path includes the     protocol, file path etc... This is the fully qualified path. Typically absolute path should be used to      reference a page or resource outside the application server.
+        Eg: absolute path in server : C:\Revature\RBC\1908-aug-26\Html\Home.html
+        absolute path outside server:  https://app.revature.com/
+    - Relative Path : Typically used to reference the page or resource within the application server. Its prefered to have relative path for local resources over absolute path.
+
+### HTML Forms
+- HTML forms are the way to take input from the user.
+- Form has 2 important attributes : 
+    - action : referes to URL where the form values should be submitted.
+    - Method :  It can have to values *GET* or *POST*.
+- Note : A clients request is didvided into 2 parts as Request Header (URI), Request Body (values of form sent by POST method).

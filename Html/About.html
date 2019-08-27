@@ -7,18 +7,24 @@
 </head>
 
 <body>
-    <nav title="Navigation Links">
+<nav title="Navigation Links">
         <a href="home.html">Home | </a>
         <a href="About.html">About | </a>
         <a href="contact.html">Contact Us</a>
+        <a href="https://app.revature.com/">Revature Pro</a>
     </nav>
     <h1 title="About Page">About Us page</h1>
     <table>
         <tr>
             <td>
                 <!-- alt stands for alternate text which is used to describe image. Typically used for text screen readers -->
-                <img src="Revature.jpg" width="400px" height="600px" alt="Revature brochure hardcover"
+                <!-- Relative path to the image in a different folder, .. represents a folder a level up to the current folder where the page currently is -->
+                <!-- image with relative path  -->
+                <img src="../images/Revature.jpg" width="500px" height="480px" alt="Revature brochure hardcover"
                     title="Revature Brochure Cover">
+                <!-- image with absolute path outside application server -->
+                <!-- <img src="https://revature.com/wp-content/uploads/2017/07/revature-female-engineers-1_opt-1.jpg" width="500px" height="480px" alt="Revature brochure hardcover"
+                    title="Revature Brochure Cover"> -->
             </td>
             <td>
                 <h2>Technologies for fullstack web Development</h2>
@@ -49,44 +55,55 @@
                 </ul>
             </td>
         </tr>
+        
+        <tr>
+            <td>
+                <!-- Video -->
+            <video src="https://archive.org/download/Popeye_forPresident/Popeye_forPresident_512kb.mp4" width="500px" height="500px" controls autoplay="true"></video>
+            <!-- <audio src=""></audio> -->
+            </td>
+            <td>
+                    <h2>Technologies comparison in tabular format</h2>
+                    <!-- Table is used to display data in tabular format -->
+                    <table>
+                        <thead>
+                            <th>#</th>
+                            <th>Client-side</th>
+                            <th>Server-side</th>
+                            <th>Backend</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>HTML</td>
+                                <td>C#</td>
+                                <td>Sql Server</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>CSS</td>
+                                <td>Java</td>
+                                <td>Oracle</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>JavaScript</td>
+                                <td>Asp.Net</td>
+                                <td>Azure Db</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Angular</td>
+                                <td>JSP</td>
+                                <td>Postgres</td>
+                            </tr>
+                
+                        </tbody>
+                    </table>
+            </td>
+        </tr>
     </table>
-    <h2>Technologies comparison in tabular format</h2>
-    <!-- Table is used to display data in tabular format -->
-    <table>
-        <thead>
-            <th>#</th>
-            <th>Client-side</th>
-            <th>Server-side</th>
-            <th>Backend</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>HTML</td>
-                <td>C#</td>
-                <td>Sql Server</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>CSS</td>
-                <td>Java</td>
-                <td>Oracle</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>JavaScript</td>
-                <td>Asp.Net</td>
-                <td>Azure Db</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Angular</td>
-                <td>JSP</td>
-                <td>Postgres</td>
-            </tr>
 
-        </tbody>
-    </table>
 </body>
 
 </html>
