@@ -54,7 +54,8 @@ Variables: they are used to store a value. They values are stored in memory of a
 - (binary- applied on 2 or more)
     - Arithmatic- +,-,/,*,% (modulus- gives you the remainder on division)
     - Logical- &&,||,!, ^ 
-      lets say we have 2 variables a and b with some boolean value
+    - lets say we have 2 variables a and b with some boolean value: 
+
        -  AND - &&
         ```
         a  |  b  | a&&b
@@ -75,7 +76,7 @@ Variables: they are used to store a value. They values are stored in memory of a
          F |  F  |  F
          ```
 
-       - NOT - ! - It is also kniwn as negation
+       - NOT - ! - It is also known as negation
        ```
         a  | !a
         -------
@@ -105,7 +106,7 @@ Variables: they are used to store a value. They values are stored in memory of a
         - pre-decrement - --a
     - not ! - negation
         !a
-- Logical Operators
+    - typeof - tell the variable's datatype    
 
 - Strings: Its an array (collection) of character. We can use " " or ' ' to represent string value.
     In JS there are some in built operations that we can do with strings.
