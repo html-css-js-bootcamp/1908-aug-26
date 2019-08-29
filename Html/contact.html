@@ -30,21 +30,20 @@
         } */
     </style>
 </head>
-
 <BODY>
     <nav>
-        <a href="home.html">Home | </a>
-        <a href="About.html">About | </a>
-        <a href="contact.html">Contact Us</a>
-        <a href="https://app.revature.com/">Revature Pro</a>
+        <a class="nav" href="home.html">Home | </a>
+        <a class="nav" href="About.html">About | </a>
+        <a class="nav" href="contact.html">Contact Us</a>
+        <a class="nav" href="https://app.revature.com/">Revature Pro</a>
     </nav>
     <h1>Contact Us page</h1>
-    <table>
+    <table >
         <tr>
             <td>
                 <!-- contact form -->
                 <form action="Home.html" method="GET">
-                    <table>
+                    <table id="form1">
                         <tr>
                             <td>
                                 <label for="name">Name <span>* </span> </label>
@@ -113,8 +112,19 @@
             </td>
             <td>
                 <!-- contact details -->
+                Email:<a href="mailto:support@revature.com">support@revature.com`</a>
+                <address>
+                    11730, Plaza America Dr #205,<br>
+                    Reston, VA 20190,<br>
+                    US
+                </address>
             </td>
         </tr>
     </table>
+    <script>
+    //this is internal JavaScript
+    console.log('Hello from Internal JS');
+    </script>
+   <script src="../scripts/contact.js" type="text/javascript">no script supported in your browser</script>
 </BODY>
 </html>
