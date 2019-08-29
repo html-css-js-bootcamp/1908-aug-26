@@ -55,39 +55,46 @@ Variables: they are used to store a value. They values are stored in memory of a
     - Arithmatic- +,-,/,*,% (modulus- gives you the remainder on division)
     - Logical- &&,||,!, ^ 
       lets say we have 2 variables a and b with some boolean value
-        AND - &&
+       -  AND - &&
+        ```
         a  |  b  | a&&b
         ----------------
          T |  T  |  T
          T |  F  |  F
          F |  T  |  F
          F |  F  |  F
+         ```
 
-        OR -||
+        - OR -||
+        ```
         a  |  b  | a||b
         ----------------
          T |  T  |  T
          T |  F  |  T
          F |  T  |  T
          F |  F  |  F
+         ```
 
-        NOT - ! - It is also kniwn as negation
+       - NOT - ! - It is also kniwn as negation
+       ```
         a  | !a
         -------
         T  | F
         F  | T
-
-        XOR - ^
+        ```
+        - XOR - ^
+        ```
         a  |  b  | a^b
         ----------------
          T |  T  |  F
          T |  F  |  T
          F |  T  |  T
          F |  F  |  F
+         ```
 
     - Assignment- =, +=, -+,*=,/=
         Eg: a += 1 => a=a+1;
-    - Comparison- >,<,>=,<=,==,===
+    - Comparison- >,<,>=,<=,==,= = =
 
 - (unary operators- applies to single variable)
     - increment ++
