@@ -19,7 +19,7 @@
  //confirm('Do you confirm JS?');
 
  // Variables:
-// name; // variable declaration
+// name; // variable declaration -> Global variable
 // name="Pushpinder Kaur"; // variable assignment
 // var age=27;
 // age=25;// re-assignation of value to a variable
@@ -194,14 +194,18 @@ for(;;){
 // console.log(result);
 
 //Callback functions
-function name(fName, mName, lName){
+/*function name(fName, mName, lName){    
+    //console.log(fullname);// this is not accessible because it is outside block scope
     if(mName !="" || mName != null || mName != undefined){
-        return `${fName} ${mName} ${lName}`;
+        var fullname=`${fName} ${mName} ${lName}`;
+        //console.log(fullname);// it is accessible because of block scope
+        return fullname;
     }
     else{
         return `${fName} ${lName}`;
     }
-}
+    
+ }*/
 
 //                        optional parameter    callback function
 //                                 vvv             vvv
@@ -214,16 +218,82 @@ function name(fName, mName, lName){
 show("Pushpinder","Kaur","Kalsi",name);*/
 
 //IIFE
-(function(firstName, middleName="", lastName, callbackFunction){
+/*(function(firstName, middleName="", lastName, callbackFunction){
+    console.log(firstName);// it is accessible here as it in within function scope
+    //debugger;->to debug the program-> the program will start from here
     //         calling callback functtion
     //            vvv      
     let fullName=callbackFunction(firstName,middleName,lastName);
     console.log(fullName);
-})("Pushpinder","Kaur","Kalsi",name);
+})("Pushpinder","Kaur","Kalsi",name);*/
+
+//console.log(firstName);// -> this gives error as it is function scoped.
 //you can call a named function as many times as you want to
 /*add();
 add();
 add();
 add();
 */
+/*var globalScopevariable="global value";
+(function testScope(){
+    console.log(globalScopevariable);
+    {
+        console.log(globalScopevariable);
+        //block-anygthing within {} makes a block. Eg if block, for loop block
+        let blockVariable="block Variable Value"; // let does not allow to access a value outside the block i.e. let is block scoped
+        var functionVariable="function Variable Value"; // var is function scoped
+        console.log(blockVariable);
+    }
+    //outside block scope
+    //console.log(blockVariable); // this gives error as it is outside block scope
+    console.log(functionVariable); // this is accessible because it is function scoped
 
+})();
+console.log(functionVariable); // this is not accessible because it is function scoped
+
+console.log(globalScopevariable);
+*/
+
+
+// Objects in JS
+// create an object using Object Literal Notation (common way of creating objects)
+//var person={};// empty object
+//console.log(typeof person);
+
+var person={
+//property value
+//   v      v 
+    ssn : "1234567",
+    //property
+    name : {
+        firstname : "Pushpinder",
+        lastName : "Kaur"
+    },
+    address : {
+        street1 : '11730 Plaza America Dr',
+        street2 : '#205',
+        city : "Reston",
+        state : 'VA',
+        zipcode : '20190'
+    },
+    //method
+    work : function(){
+        console.log('This person works for Revature as Software consultant');
+    },
+    bio: function(){
+        //      this points to current object in the current scope
+        //              vv
+        let fullname= this.name.firstname + ' '+this.name.lastName;
+        let fullAddress = this.address.street1+' '+this.address.street2+' '+this.address.city+' '+this.address.state+' '+this.address.zipcode;
+        return `${fullname}'s address is ${fullAddress}, SSN is ${this.ssn}`
+    }
+}
+//dot notation
+//console.log(person.ssn +'-'+person.name.firstname);
+
+//bracket notation
+person.ssn="7654321";//change property of an object;
+//add another property to object
+person.hobby="Playing badmontion";
+console.log(person['ssn'] +'-'+person['name']['firstname']+ ' hobby is '+person['hobby']);
+console.log(person.bio());

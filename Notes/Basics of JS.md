@@ -41,9 +41,9 @@ Variables: they are used to store a value. They values are stored in memory of a
     `var name;`//declaration of the variable
     `name="Pushpinder"` // allocation/assignation of a value
 - Datatypes :
-    - strings - collection of characters; 
+    - String - collection of characters; 
         `name="Pushpinder Kaur";` 
-    - numbers - integers, real numbers, decimal, infinity, - infinity, NaN
+    - Number - integers, real numbers, decimal, infinity, - infinity, NaN
     - Boolean - true or false
     - Object - complex datatype
     - Null - Empty or nothing
@@ -140,16 +140,27 @@ Variables: they are used to store a value. They values are stored in memory of a
 ### Debugger Breakpoints in Devtools
 - Step into (F11), Step Over (F10), Step Out (Shift F11)
 ### Scopes 
-- Global, 
-- function,
-- block -> var is function scoped and let is block scope.
+- Scopes means lifetime of a variable/object/function. In JS there are 3 types of Scopes:
+    - Global Scope: They are accessible anywhere in the program. Generally they are declared outside function. 
+    - function Scope: They are accessible anywhere within the function.
+    - block Scope -> They are most restrictive in scope and can only be accessed with in a block.
+-Note: var is function scoped and let is block scope.
+
+### Objects
+- Everything in Java is direclty or indirectly Object.
+- Objects: collections of related items like variable and functions which are known as properties and methods of an objects respectively.
+    -Eg: global objects : console, window, document, Math.
+- To create custom object first understand the requirement of the object.
+- To create an object understand the properties (static or dynamic) of and object and its behavior (methods or function in JS).
+- Eg: Car
+    - properties of the car : static [ license plate, chasis number], dynamic [speed, mileage]
+    - behaviour : transport
+- Eg: person
+    - properties: name, ssn, address
+    - behavior: work, bio
+
 ### Arrays
 - they are collection of items in list manner which are placed in contigious memory location.
-### Objects
-- Everything in Java is direclty or indirectly Object 
--objects: collections of related items variable and functions which are known as properties and methods of an objects
-    -Eg: global objects : console, window, document.
-- To create custom object first understand the requirement of the object
 ### Introduction to DOM Manipulation
 ### Introduction to Event Handling
 ### Practice JS Flow Control Algorithms
