@@ -19,13 +19,13 @@
  //confirm('Do you confirm JS?');
 
  // Variables:
- name; // variable declaration
- name="Pushpinder Kaur"; // variable assignment
- var age=27;
- age=25;// re-assignation of value to a variable
- let occupation="Software Consultant";
+// name; // variable declaration
+// name="Pushpinder Kaur"; // variable assignment
+// var age=27;
+// age=25;// re-assignation of value to a variable
+// let occupation="Software Consultant";
 
- const pi=3.14;
+// const pi=3.14;
  //pi=22/7;// this gives error as you cannot re-assign to a constant
 //  console.log(name);
 //  console.log(occupation);
@@ -34,10 +34,10 @@
 
 
 // Datatypes:
-var a;
+//var a;
 //console.log(a);// undefined as no valuse is assigned to it
-a=5;
-var b ='5';
+//a=5;
+//var b ='5';
 //console.log(a==b);// returns true because == check for value not for type
 //console.log(a===b); //returns false because === check for value and also for type
 
@@ -146,10 +146,84 @@ console.log(`your grade is ${grade}`);
     }
 }*/
 
-/// infinit loops- if the condition is forever true loop enters a deadlock and it will keep on running infinitely
+/// infinite loops- if the condition is forever true loop enters a deadlock and it will keep on running infinitely
 /*while(true){
 
 }
 for(;;){
 
 }*/
+
+// FUNCTIONS
+// let a=10;// hardcoded values
+// let b=20;
+// let c;
+// Named Function
+// function add()//function specification/declaration 
+// { 
+//     //function body/definition
+//     c=a+b;
+//     console.log(`Sum of ${a} and ${b} is ${c}`);//using template literal which is new ES6 is used for string interpolation
+//     //console.log("Sum of "+a + " and "+b +" is "+c);
+// }
+
+//You can also hold the function's reference in a variable and call the variable with paranthesis instead of function
+/*var Add=function add()
+{ 
+    c=a+b;
+    console.log(`Sum of ${a} and ${b} is ${c}`);//using template literal which is new ES6 is used for string interpolation
+};*/
+// calling/invoking a function
+// Add();
+// console.log(Add);
+
+
+// a function with parameters which returns the result
+/*function Add(x,y){
+    return x+y;
+}*/
+
+//Anonymous function
+// var Add=function(x,y){
+//     return x+y;
+// }
+
+//Arrow function
+// var Add=(x,y)=>x+y;
+// var result=Add(a,b);
+// console.log(result);
+
+//Callback functions
+function name(fName, mName, lName){
+    if(mName !="" || mName != null || mName != undefined){
+        return `${fName} ${mName} ${lName}`;
+    }
+    else{
+        return `${fName} ${lName}`;
+    }
+}
+
+//                        optional parameter    callback function
+//                                 vvv             vvv
+/*function show(firstName, middleName="", lastName, callbackFunction){
+    //         calling callback functtion
+    //            vvv      
+    let fullName=callbackFunction(firstName,middleName,lastName);
+    console.log(fullName);
+}
+show("Pushpinder","Kaur","Kalsi",name);*/
+
+//IIFE
+(function(firstName, middleName="", lastName, callbackFunction){
+    //         calling callback functtion
+    //            vvv      
+    let fullName=callbackFunction(firstName,middleName,lastName);
+    console.log(fullName);
+})("Pushpinder","Kaur","Kalsi",name);
+//you can call a named function as many times as you want to
+/*add();
+add();
+add();
+add();
+*/
+

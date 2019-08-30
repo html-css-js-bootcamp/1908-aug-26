@@ -124,17 +124,18 @@ Variables: they are used to store a value. They values are stored in memory of a
     - switch
 ### Loops: for, while, do-while :
     - Repetiton/iteration
+
 ### Functions 
-- Operations which are performed can be encapsulated in a function. You can also say that - it encloses logic of the program.
+- Operations which are performed in code/programming can be encapsulated in a function. You can also say that - it encloses logic of the program.
 - You can reuse them as many times as you want.
 - There are different types of functions in JS:
-        - Named functions
-        - Anonymous functions
-        - Arrow functions (new in ES6)
-        - functions with parameters
-        - function which returns values
-        - callback functions
-        - IIFE(Immediate Invoked Function Expressions) functions : a function is called with declaration
+        - Named functions : A function which has a name and can be called as many times as we want to.
+        - Anonymous functions : A function which has no name and created for single use. They are better in performance than named function as they are not stored in the memory for longer.
+        - Arrow functions (new in ES6) : These are the shorthand notation of anonymous functions and they are       even better than anonymous functions.
+        - functions with parameters : They are used for modular programming to make functions even more loosely coupled.
+        - function which returns values : They return values based on the operation performed.
+        - callback functions : A function which is passed as a parameter to another function
+        - IIFE(Immediate Invoked Function Expressions) functions : a function is called with declaration itself.
 
 ### Debugger Breakpoints in Devtools
 - Step into (F11), Step Over (F10), Step Out (Shift F11)
