@@ -260,7 +260,7 @@ console.log(globalScopevariable);
 //var person={};// empty object
 //console.log(typeof person);
 
-var person={
+/*var person={
 //property value
 //   v      v 
     ssn : "1234567",
@@ -297,3 +297,60 @@ person.ssn="7654321";//change property of an object;
 person.hobby="Playing badmontion";
 console.log(person['ssn'] +'-'+person['name']['firstname']+ ' hobby is '+person['hobby']);
 console.log(person.bio());
+*/
+
+//ARRAYS
+//var employees=[];//empty array
+//console.log(typeof employees); Array is deriverd from object
+
+let employees=['Mark','Jean','Fabrice','Rose','Teena','Anifat',123];
+console.log(employees[0]);//access first element
+employees[2]="Mansour";// assign a new value
+console.log(employees[2]);//access third element
+console.log(employees.length);//this gives you number of elements of the array
+
+//Operations of array
+
+//to add an element from last
+// employees.push('Tammi');
+//use pop to remove an element from last
+// employees.pop();
+
+//to remove first element from array
+// employees.shift();
+
+//to insert element from the beginning of the array
+// employees.unshift('Richard');
+
+// employees.splice(4,1);
+
+// //employees.reverse();
+//to convert an array to string
+
+// iterate elements of the array
+//in forward direction
+// for(let i=0;i<employees.length;i++){
+//     console.log(employees[i]);
+// }
+
+//in backward direction
+/*for(let j=employees.length-1;j>=0;j--){
+    console.log(employees[j]);
+}
+console.log(employees.toString());// this gives comma separated values of an array
+*/
+
+//PALINDROME PROBLEM
+// MADAM, RACECAR, NUN, MOM, WOW, BOB, LEVEL, MALAYALAM
+function isPalindrome(str){
+    var lengthStr=str.length;// this gives the length of the string
+    var midpoint=Math.floor(lengthStr/2); //calculate the mid of the string
+    for(let i=0;i<midpoint;i++){
+        if(str[i]!==str[lengthStr-1-i]){
+            return false;
+        }
+    }
+    return true;
+}
+let str=prompt('Enter a string to check if it is a Palindrome');
+console.log(isPalindrome(str));
