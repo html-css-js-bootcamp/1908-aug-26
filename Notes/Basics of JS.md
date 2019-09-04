@@ -161,8 +161,22 @@ Variables: they are used to store a value. They values are stored in memory of a
 
 ### Arrays
 - they are collection of items in list manner which are placed in contigious memory location.
-### Introduction to DOM Manipulation
 ### Introduction to Event Handling
+- Events - They are user actions. They are raised whenever user performs an action. Eg: mouseclick, mouse hover, key press, key release etc...
+- Event Handler - they are executed whenever an event is triggered. Typically JS functions which are exceuted.
+
+### Introduction to DOM Manipulation
+- DOM api in JS helps to manipulate DOM elements.
+- It can be used to create new elements.
+- It can be used to remove existing elements.
+- It can be used to change an element.
+- Different methods which can used to access to DOM elements using JS are:
+    - document.getElementById() - used to select element of a particular id.
+    - document.getElementByClass() - use to select element of a particular class. It returns an array of all elements with such classes.
+    - document.getElementByName() - use toselect element based on the name attribute.
+    - document.getElementByTag() -  use to select element by tags. It returns an array of all elements of that      tag.
+    - document.querySelector() - This is what modern browsers like. It uses CSS selectors.
+    
 ### Practice JS Flow Control Algorithms
 ### Implement Bubblesort
     - there are many Algorithms to sort and array. Eg: linear sort, bucket sort, merge sort, bubble sort, radix sort, binary tree sort etc....
