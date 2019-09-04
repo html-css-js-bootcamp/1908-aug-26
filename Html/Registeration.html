@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+    <link href="../Styles/Registeration.css" type="text/css" rel="Stylesheet">
+</head>
+<body>
+    <h1>Register yourself</h1>
+    <span>* means all fields mandatory</span>
+    <form action="Home.html">
+    <table>
+        <tr>
+            <td><label for="fname">First Name<span>*</span></label></td>
+            <td><input type="text" id="fname" focus ></td>
+        </tr>
+        <tr>
+            <td><label for="mname">Middle Name</label></td>
+            <td><input type="text" id="mname"  ></td>
+        </tr>
+        <tr>
+            <td><label for="lname">Last Name <span>*</span> </label></td>
+            <td><input type="text" id="lname" focus ></td>
+        </tr>
+        <tr>
+                <td><label for="email">Email<span>*</span></label></td>
+                <td><input type="email" id="email" ></td>
+        </tr>
+        <tr>
+                <td><label for="phone">Phone Number<span>*</span></label></td>
+                <td><input type="phone" id="phone" ></td>
+        </tr>
+        <tr>
+                <td><label for="age">Age<span>*</span></label></td>
+                <td><input type="number" id="age" ></td>
+        </tr>
+        <tr>
+                <td><label for="gender">Gender<span>*</span></label></td>
+                <td>
+                    <input type="radio" id="male"   name="gender">male
+                    <input type="radio" id="female" name="gender">female
+                    <input type="radio" id="others" name="gender">Others
+                </td>
+        </tr>
+        <tr>
+                <td><label for="password">Password<span>*</span></label></td>
+                <td><input type="password" id="password" ></td>
+        </tr>
+        <tr>
+                <td><label for="confirmpassword">Confirm Password<span>*</span></label></td>
+                <td><input type="password" id="confirmpassword" ></td>
+        </tr>
+        <tr>
+            <td><input type="submit" id="Submit" value="Submit"></td>
+            <td><input type="Reset" id="Reset" value="Reset"></td>
+        </tr>
+    </table>
+</form>
+<ul id="errors">
+
+</ul>
+<script src="../scripts/Registeration.js" type="text/javascript"></script>
+</body>
+</html>
