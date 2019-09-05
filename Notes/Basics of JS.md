@@ -178,7 +178,7 @@ Variables: they are used to store a value. They values are stored in memory of a
     
 ### Practice JS Flow Control Algorithms
 ### Implement Bubblesort
-    - there are many Algorithms to sort and array. Eg: linear sort, bucket sort, merge sort, bubble sort, radix sort, binary tree sort etc....
+    - there are many Algorithms to sort an array. Eg: linear sort, bucket sort, merge sort, bubble sort, radix sort, binary tree sort etc....
     1st Pass:[23,45,12,65,34,89,86,49]-> [23,45,12,65,34,89,86,49]-> [23,12,45,65,34,89,86,49]->[23,12,45,65,34,89,86,49]->[23,12,45,34,65,89,86,49]->[23,12,45,34,65,89,86,49]->[23,12,45,34,65,86,89,49]->[23,12,45,34,65,86,49,89]
               ^   ^                           ^   ^                           ^  ^                         ^  ^                           ^  ^                          ^ ^                           ^ ^
 
