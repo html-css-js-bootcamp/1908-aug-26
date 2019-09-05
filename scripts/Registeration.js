@@ -30,5 +30,7 @@ function checkpassword(){
         alert('password and confirm password do not match');
     }
 }
-confirmpassword.onblur=checkpassword;
+// binding event with event handler
+//confirmpassword.onblur=checkpassword;
+confirmpassword.addEventListener('blur',checkpassword);
 btnSubmit.onclick=validate;

@@ -9,8 +9,7 @@
 - ES5 or ES6 are more popular in industry because most of browsers support.
 
 ### Why JavaScript?
-- HTML is used for creating a webpage, CSS adds appealing look and feel to web page but JavaScript
-    is used to add behaviour to a web page.
+- HTML is used for creating a webpage, CSS adds appealing look and feel to web page but JavaScript is used to add behaviour to a web page. To create dynamic websites
 
 ### What JavaScript can do?
 - JS can create prompts.
@@ -23,8 +22,8 @@
 - There is a lot that JS can do.
 
 ### Features/characterstics of JavaScript:
-- It is interpretted (because the interpreter reads it line by line) not compiled(converts source code into another form before running).
-- It is loosely-typed, because JS variables can bold value of any type.
+- It is interpreted (because the interpreter reads it line by line) not compiled(converts source code into another form before running).
+- It is loosely-typed, because JS variables can hold value of any type.
 - It is case-sensitive. `Man` and `man` are treated differently.
 - It can call to a server by making Ajax calls.
 
@@ -66,7 +65,7 @@ Variables: they are used to store a value. They values are stored in memory of a
          F |  F  |  F
          ```
 
-        - OR -||
+        - OR - ||
         ```
         a  |  b  | a||b
         ----------------
@@ -93,7 +92,7 @@ Variables: they are used to store a value. They values are stored in memory of a
          F |  F  |  F
          ```
 
-    - Assignment- =, +=, -+,*=,/=
+    - Assignment- =, +=, -=,*=,/=
         Eg: a += 1 => a=a+1;
     - Comparison- >,<,>=,<=,==,= = =
 
@@ -144,10 +143,10 @@ Variables: they are used to store a value. They values are stored in memory of a
     - Global Scope: They are accessible anywhere in the program. Generally they are declared outside function. 
     - function Scope: They are accessible anywhere within the function.
     - block Scope -> They are most restrictive in scope and can only be accessed with in a block.
--Note: var is function scoped and let is block scope.
+- Note: var is function scoped and let is block scope.
 
 ### Objects
-- Everything in Java is direclty or indirectly Object.
+- Everything in Java is directly or indirectly is Object.
 - Objects: collections of related items like variable and functions which are known as properties and methods of an objects respectively.
     -Eg: global objects : console, window, document, Math.
 - To create custom object first understand the requirement of the object.
